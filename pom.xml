@@ -45,23 +45,29 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		
 		<!-- Dependência da h2h2database solução encontrada em aula -->
 		<dependency>
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
 			<version>1.3.156</version>
 		</dependency>
+		
 		<!-- Dependência da Spring Security -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
 		</dependency>
+		
 		<!-- Dependência para Codificação do Token -->
 		<dependency>
 			<groupId>commons-codec</groupId>
 			<artifactId>commons-codec</artifactId>
 		</dependency>
+	
 	</dependencies>
+	
+	
 	<build>
 		<plugins>
 			<plugin>
