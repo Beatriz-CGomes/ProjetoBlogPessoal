@@ -1,9 +1,9 @@
 package com.blogPessoal.service;
 
 import java.nio.charset.Charset;
-import java.util.Base64;
 import java.util.Optional;
 
+import org.apache.commons.codec.binary.Base64;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
