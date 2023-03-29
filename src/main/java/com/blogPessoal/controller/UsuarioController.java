@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.blogPessoal.model.Usuario;
 import com.blogPessoal.model.UsuarioLogin;
-import com.blogPessoal.model.UsuarioRepository;
+import com.blogPessoal.repository.UsuarioRepository;
 import com.blogPessoal.service.UsuarioService;
 
 import jakarta.validation.Valid;

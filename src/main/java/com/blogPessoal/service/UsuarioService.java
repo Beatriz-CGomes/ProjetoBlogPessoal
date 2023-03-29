@@ -12,7 +12,7 @@ import org.springframework.web.server.ResponseStatusException;
 
 import com.blogPessoal.model.Usuario;
 import com.blogPessoal.model.UsuarioLogin;
-import com.blogPessoal.model.UsuarioRepository;
+import com.blogPessoal.repository.UsuarioRepository;
 
 @Service
 public class UsuarioService {
