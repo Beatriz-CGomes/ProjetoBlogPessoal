@@ -28,22 +28,22 @@ public class BasicSecurityConfig {
 	}
 
 	@Bean
-    public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
+	public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
 
-        http
-            .sessionManagement()
-            .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
-            .and().csrf().disable()
-            .cors();
+		http
+			.sessionManagement()
+			.sessionCreationPolicy(SessionCreationPolicy.STATELESS)
+			.and().csrf().disable()
+			.cors();
 
-        http
-        .authorizeHttpRequests((auth) -> auth
-                .requestMatchers("/usuarios/logar").permitAll()
-                .requestMatchers("/usuarios/cadastrar").permitAll()
-                .requestMatchers(HttpMethod.OPTIONS).permitAll()
-                .anyRequest().authenticated())
-            .httpBasic();
+		http
+			.authorizeHttpRequests((auth) -> auth
+					.requestMatchers("/usuarios/logar").permitAll()
+					.requestMatchers("/usuarios/cadastrar").permitAll()
+					.requestMatchers(HttpMethod.OPTIONS).permitAll()
+					.anyRequest().authenticated())
+				.httpBasic();
 
-        return http.build();
-}
+		return http.build();
+	}
 }
