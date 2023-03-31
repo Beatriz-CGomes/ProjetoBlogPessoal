@@ -45,12 +45,7 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		<!-- Dependência da h2h2database solução encontrada em aula -->
-		<dependency>
-			<groupId>com.h2database</groupId>
-			<artifactId>h2</artifactId>
-			<scope>test</scope>
-		</dependency>
+
 		<!-- Dependência da Spring Security -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
